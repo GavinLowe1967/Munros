@@ -3,6 +3,13 @@
 \def\needsPrintout{\framebox{Needs printout.}}
 \sloppy
 \def\secnumdepth{1}
+\setcounter{tocdepth}{1}
+
+\newcounter{mctr}
+\newenvironment{munros}{%
+  \begin{list}{\thesubsection.\arabic{mctr}.}{\usecounter{mctr}}}{\end{list}}
+\def\target{$\star$\ }
+\def\tick{[Y]}
 
 \begin{document}
 \begin{center}
@@ -10,18 +17,30 @@
 \large \today
 \end{center}
 
+\tableofcontents
+
 \input{cairngorms}
 
 \input{southwest} 
-
 
 \input{central}
 
 \input{glencoe-fortwilliam}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{A86}
 
-\section{A86}
+\input{6}
 
-East of Roybridge, including Newtonmore area. 
+\input{GlenShiel}
+
+\input{Skye}
+
+\input{AffricMullarDochStrathfarrar}
+
+\input{FarNorthWest}
+
+\input{FarNorth}
+
+
+
 \end{document}
