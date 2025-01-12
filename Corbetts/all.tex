@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper]{article}
+\def\buy{\framebox{Buy.}}
+\def\needsPrintout{\framebox{Needs printout.}}
+\sloppy
+\def\secnumdepth{1}
+\setcounter{tocdepth}{1}
+
+\newcounter{mctr}
+\newenvironment{munros}{%
+  \begin{list}{\thesubsection.\arabic{mctr}.}{\usecounter{mctr}}}{\end{list}}
+\def\target{$\star$\ }
+\def\tick{[Y]}
+
+\begin{document}
+\begin{center}
+\Large\bf Complete List of  Munros
+\large \today
+\end{center}
+
+\tableofcontents
+
+``\target'' indicates a target.  ``\tick'' indicates I have a printout.  
+
+%% \input{cairngorms}
+
+%% \input{southwest} 
+
+%% \input{central}
+
+%% \input{glencoe-fortwilliam}
+
+%% \input{A86}
+
+%% \input{6}
+
+%% \input{GlenShiel}
+
+%% \input{Skye}
+
+%% \input{AffricMullarDochStrathfarrar}
+
+%% \input{FarNorthWest} % Inc Lewis
+
+\input{FarNorth}
+
+
+
+\end{document}
